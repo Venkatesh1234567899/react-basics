@@ -1,17 +1,15 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
+import React, { useState } from 'react'
 
 export default function App() {
+const [state, setstate] = useState('React')
+const [Reactstate, setReactstate] = useState('Developer')
+
+
+
   return (
     <div>
-      <h1>App</h1>
-      <Header name = {'React'}
-      age = {42}
-      ceoBoolean = {false}
-      array = {[1,2,3,4]}
-      />
-      <Footer/>
+      <h1>App {state}, {Reactstate}</h1>
+      
     </div>
   )
 }
